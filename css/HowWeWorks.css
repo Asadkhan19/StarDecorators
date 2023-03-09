@@ -1,0 +1,179 @@
+/* How We Work Section */
+.how-we-work {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #f6e5d1;
+  }
+  
+  .how-we-work h2 {
+    font-size: 60px;
+    margin-bottom: 60px;
+    font-weight: 700;
+    color: #333;
+    position: relative;
+  }
+  
+  .how-we-work h2::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 3px;
+    background-color: black;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  
+  /* Grid Container */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 40px;
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Grid Item */
+  .grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(27, 20, 20, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background-color: #040404; /* default background color */
+    color: #000000;
+  }
+  
+  /* Grid Item Image */
+  .grid-item img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Grid Item Content */
+  .grid-item-content {
+    padding: 30px 20px;
+  }
+  
+  /* Grid Item Title */
+  .grid-item h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  /* Grid Item Description */
+  .grid-item p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .grid-item:nth-child(odd) {
+    background-color: #C19A6B; /* a light gray color */
+  }
+  
+  .grid-item:nth-child(even) {
+    background-color: #C19A6B; /* a slightly darker gray color */
+  }
+  
+  /* Grid Item Overlay */
+  .grid-item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: -1;
+  }
+  
+  /* Grid Item Hover */
+  .grid-item:hover {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  .grid-item:hover:before {
+    opacity: 1;
+  }
+  
+  @media (max-width: 767px) {
+    /* How We Work Section */
+    .how-we-work h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+    
+    /* Grid Container */
+    .grid-container {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-gap: 30px;
+      padding: 0 10px;
+    }
+    
+    /* Grid Item Title */
+    .grid-item h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    
+    /* Grid Item Description */
+    .grid-item p {
+      font-size: 16px;
+    }
+  }
+  
+
+
+  /* About Us CSS */
+  .about-us {
+    padding: 50px 0;
+    background-color: #f6e5d1;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .container h2 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .container h2::after {
+    content: "";
+    width: 50%;
+    height: 3px;
+    background-color: #090b0c;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+  }
+  
+  .container p {
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease-out;
+  }
+  
+  .container:hover p {
+    opacity: 1;
+    transform: translateY(0);
+  }
